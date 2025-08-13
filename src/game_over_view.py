@@ -14,7 +14,7 @@ class GameOverView(arcade.View):
     Usa callbacks/factories para reiniciar o volver al menú.
     """
     def __init__(self, final_score: int = 0, message: str = "Fin del juego",
-                 make_game_view=None, make_start_view=None):
+                make_game_view=None, make_start_view=None):
         super().__init__()
         arcade.set_background_color(arcade.color.DARK_BLUE)
         self.final_score = final_score
@@ -59,11 +59,11 @@ class GameOverView(arcade.View):
         w, h = self.window.width, self.window.height
 
         arcade.draw_text(self.message, w/2, self.text_y,
-                         arcade.color.BLUE_GREEN, 40, anchor_x="center", font_name=self.font_name)
+                        arcade.color.BLUE_GREEN, 40, anchor_x="center", font_name=self.font_name)
         arcade.draw_text(f"Monedas: {self.final_score}", w/2, h/2 - 20,
-                         arcade.color.WHITE, 24, anchor_x="center", font_name=self.font_name)
+                        arcade.color.WHITE, 24, anchor_x="center", font_name=self.font_name)
         arcade.draw_text("ENTER: Reiniciar  |  I: Inicio  |  ESC: Salir",
-                         w/2, h/2 - 70, arcade.color.LIGHT_GRAY, 16, anchor_x="center", font_name=self.font_name)
+                        w/2, h/2 - 70, arcade.color.LIGHT_GRAY, 16, anchor_x="center", font_name=self.font_name)
 
     def on_update(self, dt: float):
         self.text_y += self.float_speed * self.float_dir
