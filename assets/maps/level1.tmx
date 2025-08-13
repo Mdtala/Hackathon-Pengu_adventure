@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="70" tileheight="70" infinite="0" nextlayerid="7" nextobjectid="8">
+ <tileset firstgid="1" name="ice_expansion" tilewidth="70" tileheight="70" tilecount="96" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/caneGreen.png" width="70" height="70"/>
+  </tile>
+  <tile id="1">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/caneGreenSmall.png" width="70" height="70"/>
+  </tile>
+  <tile id="2">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/caneGreenTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="3">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/caneGreenTopAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="4">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/caneRed.png" width="70" height="70"/>
+  </tile>
+  <tile id="5">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/caneRedSmall.png" width="70" height="70"/>
+  </tile>
+  <tile id="6">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/caneRedTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="7">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/caneRedTopAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="8">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/deadTree.png" width="70" height="70"/>
+  </tile>
+  <tile id="9">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceBlock.png" width="70" height="70"/>
+  </tile>
+  <tile id="10">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceBlockAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="11">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceBlockHalf.png" width="70" height="70"/>
+  </tile>
+  <tile id="12">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceBlockHalfAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="13">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceWater.png" width="70" height="70"/>
+  </tile>
+  <tile id="14">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceWaterAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="15">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceWaterDeep.png" width="70" height="70"/>
+  </tile>
+  <tile id="16">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceWaterDeepAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="17">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceWaterDeepStars.png" width="70" height="70"/>
+  </tile>
+  <tile id="18">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceWaterDeepStarsAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="19">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceWaterMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="20">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iceWaterMidAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="21">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/igloo.png" width="70" height="70"/>
+  </tile>
+  <tile id="22">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iglooAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="23">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iglooDoor.png" width="70" height="70"/>
+  </tile>
+  <tile id="24">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iglooRoof.png" width="70" height="70"/>
+  </tile>
+  <tile id="25">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iglooRoofLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="26">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/iglooRoofRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="27">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/pineSapling.png" width="70" height="70"/>
+  </tile>
+  <tile id="28">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/pineSaplingAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="29">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/plant.png" width="70" height="70"/>
+  </tile>
+  <tile id="30">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/plantAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="31">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/rock.png" width="70" height="70"/>
+  </tile>
+  <tile id="32">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/rockAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="33">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowBall.png" width="70" height="70"/>
+  </tile>
+  <tile id="34">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowBallBig.png" width="70" height="70"/>
+  </tile>
+  <tile id="35">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowBallBigGround.png" width="70" height="70"/>
+  </tile>
+  <tile id="36">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowBallGround.png" width="70" height="70"/>
+  </tile>
+  <tile id="37">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowGroundLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="38">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowGroundRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="39">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowHill.png" width="70" height="70"/>
+  </tile>
+  <tile id="40">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowHillLow.png" width="70" height="70"/>
+  </tile>
+  <tile id="41">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="42">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="43">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="44">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/snowWave.png" width="70" height="70"/>
+  </tile>
+  <tile id="45">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/spikesBottom.png" width="70" height="70"/>
+  </tile>
+  <tile id="46">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/spikesBottomAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="47">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/spikesBottomAlt2.png" width="70" height="70"/>
+  </tile>
+  <tile id="48">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/spikesTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="49">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/spikesTopAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="50">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/spikesTopAlt2.png" width="70" height="70"/>
+  </tile>
+  <tile id="51">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/spikeTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="52">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tree.png" width="70" height="70"/>
+  </tile>
+  <tile id="53">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeBranchesLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="54">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeBranchesLeftAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="55">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeBranchesLeftSnowAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="56">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeBranchesRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="57">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeBranchesSnowLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="58">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeBranchesSnowRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="59">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeBranchesSnowRightAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="60">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeBranchesSnowRightSnowAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="61">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="62">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTopSnow.png" width="70" height="70"/>
+  </tile>
+  <tile id="63">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunk.png" width="70" height="70"/>
+  </tile>
+  <tile id="64">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkBottom.png" width="70" height="70"/>
+  </tile>
+  <tile id="65">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkBottomAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="66">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkBottomAlt2.png" width="70" height="70"/>
+  </tile>
+  <tile id="67">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkBottomAlt3.png" width="70" height="70"/>
+  </tile>
+  <tile id="68">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkBranch.png" width="70" height="70"/>
+  </tile>
+  <tile id="69">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkBranchEndLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="70">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkBranchEndRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="71">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkBranchLeftAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="72">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkBranchRightAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="73">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkSplitLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="74">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkSplitRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="75">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="76">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundra.png" width="70" height="70"/>
+  </tile>
+  <tile id="77">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCenter.png" width="70" height="70"/>
+  </tile>
+  <tile id="78">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCenter_rounded.png" width="70" height="70"/>
+  </tile>
+  <tile id="79">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCliffLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="80">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCliffLeftAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="81">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCliffRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="82">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCliffRightAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="83">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHalf.png" width="70" height="70"/>
+  </tile>
+  <tile id="84">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHalfLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="85">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHalfMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="86">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHalfRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="87">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHillLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="88">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHillLeft2.png" width="70" height="70"/>
+  </tile>
+  <tile id="89">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHillRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="90">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHillRight2.png" width="70" height="70"/>
+  </tile>
+  <tile id="91">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraLedgeLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="92">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraLedgeRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="93">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="94">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="95">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Ice expansion/Tiles/tundraRight.png" width="70" height="70"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="97" name="city_expansion" tilewidth="70" tileheight="70" tilecount="98" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/anemometer.png" width="70" height="70"/>
+  </tile>
+  <tile id="1">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/awningGreen.png" width="70" height="70"/>
+  </tile>
+  <tile id="2">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/awningGreenRed.png" width="70" height="70"/>
+  </tile>
+  <tile id="3">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/awningRed.png" width="70" height="70"/>
+  </tile>
+  <tile id="4">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/chimney.png" width="70" height="70"/>
+  </tile>
+  <tile id="5">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/chimneyLow.png" width="70" height="70"/>
+  </tile>
+  <tile id="6">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/chimneyThin.png" width="70" height="70"/>
+  </tile>
+  <tile id="7">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/clock.png" width="70" height="70"/>
+  </tile>
+  <tile id="8">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/doorKnob.png" width="70" height="70"/>
+  </tile>
+  <tile id="9">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/doorKnobAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="10">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/doorLock.png" width="70" height="70"/>
+  </tile>
+  <tile id="11">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/doorOpen.png" width="70" height="70"/>
+  </tile>
+  <tile id="12">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/doorOpenTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="13">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/doorPlateTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="14">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/doorTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="15">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/doorWindowTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="16">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/fenceGate.png" width="70" height="70"/>
+  </tile>
+  <tile id="17">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/fenceLong.png" width="70" height="70"/>
+  </tile>
+  <tile id="18">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/fenceLow.png" width="70" height="70"/>
+  </tile>
+  <tile id="19">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseBeige.png" width="70" height="70"/>
+  </tile>
+  <tile id="20">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseBeigeAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="21">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseBeigeAlt2.png" width="70" height="70"/>
+  </tile>
+  <tile id="22">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseBeigeBottomLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="23">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseBeigeBottomMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="24">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseBeigeBottomRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="25">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseBeigeMidLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="26">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseBeigeMidRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="27">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseBeigeTopLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="28">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseBeigeTopMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="29">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseBeigeTopRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="30">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseDark.png" width="70" height="70"/>
+  </tile>
+  <tile id="31">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseDarkAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="32">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseDarkAlt2.png" width="70" height="70"/>
+  </tile>
+  <tile id="33">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseDarkBottomLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="34">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseDarkBottomMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="35">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseDarkBottomRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="36">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseDarkMidLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="37">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseDarkMidRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="38">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseDarkTopLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="39">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseDarkTopMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="40">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseDarkTopRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="41">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseGray.png" width="70" height="70"/>
+  </tile>
+  <tile id="42">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseGrayAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="43">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseGrayAlt2.png" width="70" height="70"/>
+  </tile>
+  <tile id="44">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseGrayBottomLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="45">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseGrayBottomMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="46">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseGrayBottomRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="47">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseGrayMidLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="48">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseGrayMidRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="49">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseGrayTopLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="50">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseGrayTopMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="51">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/houseGrayTopRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="52">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/rockMoss.png" width="70" height="70"/>
+  </tile>
+  <tile id="53">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/rockMossAlt.png" width="70" height="70"/>
+  </tile>
+  <tile id="54">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofGreyLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="55">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofGreyMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="56">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofGreyRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="57">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofGreyTopLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="58">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofGreyTopMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="59">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofGreyTopRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="60">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="61">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="62">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="63">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedTopLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="64">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedTopMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="65">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedTopRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="66">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="67">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="68">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="69">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowTopLeft.png" width="70" height="70"/>
+  </tile>
+  <tile id="70">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowTopMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="71">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowTopRight.png" width="70" height="70"/>
+  </tile>
+  <tile id="72">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/signBed.png" width="70" height="70"/>
+  </tile>
+  <tile id="73">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/signCoin.png" width="70" height="70"/>
+  </tile>
+  <tile id="74">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/signCup.png" width="70" height="70"/>
+  </tile>
+  <tile id="75">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/signHangingBed.png" width="70" height="70"/>
+  </tile>
+  <tile id="76">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/signHangingCoin.png" width="70" height="70"/>
+  </tile>
+  <tile id="77">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/signHangingCup.png" width="70" height="70"/>
+  </tile>
+  <tile id="78">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/window.png" width="70" height="70"/>
+  </tile>
+  <tile id="79">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowCheckered.png" width="70" height="70"/>
+  </tile>
+  <tile id="80">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighBottom.png" width="70" height="70"/>
+  </tile>
+  <tile id="81">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighCheckeredBottom.png" width="70" height="70"/>
+  </tile>
+  <tile id="82">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighCheckeredMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="83">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighCheckeredTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="84">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighLeadlightBottom.png" width="70" height="70"/>
+  </tile>
+  <tile id="85">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighLeadlightMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="86">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighLeadlightTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="87">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="88">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighOpenBottom.png" width="70" height="70"/>
+  </tile>
+  <tile id="89">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighOpenMid.png" width="70" height="70"/>
+  </tile>
+  <tile id="90">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighOpenTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="91">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowHighTop.png" width="70" height="70"/>
+  </tile>
+  <tile id="92">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowLeadlight.png" width="70" height="70"/>
+  </tile>
+  <tile id="93">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowLow.png" width="70" height="70"/>
+  </tile>
+  <tile id="94">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowLowCheckered.png" width="70" height="70"/>
+  </tile>
+  <tile id="95">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowLowLeadlight.png" width="70" height="70"/>
+  </tile>
+  <tile id="96">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowLowOpen.png" width="70" height="70"/>
+  </tile>
+  <tile id="97">
+   <image source="../kenney_tileset_packs/Platformer Art Complete Pack/Buildings expansion/Tiles/windowOpen.png" width="70" height="70"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="195" name="penguin55" tilewidth="70" tileheight="70" tilecount="256" columns="16">
+  <image source="../imagenes/penguin55.png" width="1126" height="1126"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="100"/>
+    <frame tileid="1" duration="100"/>
+    <frame tileid="2" duration="100"/>
+    <frame tileid="3" duration="100"/>
+    <frame tileid="4" duration="100"/>
+    <frame tileid="5" duration="100"/>
+    <frame tileid="6" duration="100"/>
+    <frame tileid="7" duration="100"/>
+    <frame tileid="8" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="16">
+   <animation>
+    <frame tileid="16" duration="100"/>
+    <frame tileid="145" duration="100"/>
+    <frame tileid="146" duration="100"/>
+    <frame tileid="147" duration="100"/>
+    <frame tileid="148" duration="100"/>
+    <frame tileid="149" duration="100"/>
+    <frame tileid="150" duration="100"/>
+    <frame tileid="151" duration="100"/>
+    <frame tileid="152" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <imagelayer id="5" name="Fondo">
+  <image source="../imagenes/fondo02.png" width="2100" height="1400"/>
+ </imagelayer>
+ <layer id="1" name="Background" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,101,101,101,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,122,117,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,119,108,121,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,49,49,49,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,49,49,49,0,0,0,0,
+0,0,0,0,0,0,0,63,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,26,25,27,0,0,56,53,61,0,0,0,0,0,0,0,0,0,0,49,49,0,0,0,0,0,0,0,0,0,
+0,22,24,22,0,0,0,66,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17
+</data>
+ </layer>
+ <layer id="2" name="Ground" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,70,69,69,69,71,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,94,95,95,96,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,85,86,87,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,94,95,96,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,94,96,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,85,86,86,86,87,0,0,0,0,0,33,0,0,0,0,0,0,0,
+95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,0,0,95,95,95,95,95,95,95,95,95,95,95,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Walls" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,
+33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Objects" visible="0">
+  <object id="2" name="player_spawn" type="spawn_point" x="367.67" y="1084" width="32" height="32"/>
+  <object id="3" name="coin" type="collectible" x="1000" y="1015" width="32" height="32">
+   <properties>
+    <property name="value" type="int" value="100"/>
+   </properties>
+  </object>
+  <object id="4" name="coin" type="collectible" x="1692" y="727" width="32" height="32">
+   <properties>
+    <property name="value" type="int" value="100"/>
+   </properties>
+  </object>
+  <object id="6" name="coin" type="collectible" x="576" y="517" width="32" height="32">
+   <properties>
+    <property name="value" type="int" value="100"/>
+   </properties>
+  </object>
+  <object id="5" name="coin" type="collectible" x="1352" y="871" width="32" height="32">
+   <properties>
+    <property name="value" type="int" value="100"/>
+   </properties>
+  </object>
+  <object id="7" name="coin" type="collectible" x="230" y="445" width="32" height="32">
+   <properties>
+    <property name="value" type="int" value="100"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="6" name="Player" class="main_ch" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,195,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

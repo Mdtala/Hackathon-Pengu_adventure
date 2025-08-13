@@ -1,0 +1,132 @@
+DOCUMENTACIÓN — Pengu Adventure (Arcade + Python + Tiled)
+
+Objetivo del juego
+------------------
+Un pingüino debe recolectar 5 monedas saltando entre plataformas. Cuando junta todas, gana. Si cae al vacío o toca una trampa , pierde el progreso.
+
+0) Preparación del entorno
+--------------------------
+- Requisitos: Python 3.10+ y Visual Studio Code.
+- Crear entorno virtual (en la carpeta del proyecto):
+    python3 -m venv venv
+    source venv/bin/activate
+- Instalar dependencias principales:
+    pip install arcade
+    
+- Extensiones recomendadas de VS Code: Python, Pylance.
+
+1) Estructura básica del proyecto
+---------------------------------
+Carpetas sugeridas:
+- src/                  (código fuente)
+  - main.py             (punto de entrada)
+  - start_view.py       (pantalla de inicio)
+  - game_over_view.py   (pantalla de fin)
+  - player.py           (clase del jugador, opcional)
+- assets/
+  - imagenes/           (sprites PNG del jugador/monedas/fondo)
+  - sounds/             (audios opcionales)
+  - maps/               (mapas .tmx de Tiled)
+- .vscode/settings.json (opcional, para fijar el intérprete)
+
+2) Crear la ventana y constantes
+--------------------------------
+- En main.py define dimensiones y constantes de física:
+  SCREEN_WIDTH, SCREEN_HEIGHT, TITLE
+  PLAYER_MOVEMENT_SPEED, GRAVITY, PLAYER_JUMP_SPEED
+- Crea una clase que herede de arcade.View para la vista de juego (GameView).
+  Ejemplo básico:
+    class GameView(arcade.View):
+        def on_show_view(self): ...
+        def on_draw(self): ...
+        def on_update(self, delta_time): ...
+        def on_key_press(self, key, modifiers): ...
+
+3) Mapas con Tiled (.tmx)
+-------------------------
+- Diseña el nivel en Tiled y exporta como .tmx (tiles en formato compatible con Arcade).
+- Recomendado nombrar capas:
+    Ground (suelo/paredes)
+    Coins  (monedas/objetivos)
+    Hazards (trampas) — opcional
+    Spawns  (puntos de aparición)
+- Carga en Arcade:
+    tile_map = arcade.load_tilemap("assets/maps/level_1.tmx", scaling=0.5)
+    scene = arcade.Scene.from_tilemap(tile_map)
+- Obtén listas de sprites por capa:
+    walls = scene["Ground"]
+    coins = scene["Coins"]
+    hazards = scene.get("Hazards")  # puede no existir
+
+4) Jugador y física
+-------------------
+- Crea el sprite del jugador (una sola imagen o animaciones).
+- Posiciónalo en el spawn (puede ser un objeto en la capa Spawns con x/y).
+- Usa física de plataforma:
+    self.physics = arcade.PhysicsEnginePlatformer(self.player, walls, gravity_constant=GRAVITY)
+- Movimiento:
+    - Flechas o A/D para izquierda/derecha (cambia self.player.change_x).
+    - Barra espaciadora para saltar (usa self.physics.can_jump()).
+
+5) Cámara y HUD (puntuación)
+----------------------------
+- Cámara del mundo para seguir al jugador:
+    self.camera = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
+    self.camera.move_to((cx, cy), 0.2)
+- Cámara de interfaz (GUI) para dibujar el puntaje fijo en pantalla:
+    self.gui_camera = arcade.Camera(SCREEN_WIDTH, SCREEN_HEIGHT)
+- Lleva un contador de monedas; cuando llegue a 5, pasa a una vista de victoria o fin.
+
+6) Colisiones: monedas y trampas
+--------------------------------
+- Monedas:
+    coins_hit = arcade.check_for_collision_with_list(self.player, coins)
+    for c in coins_hit:
+        c.remove_from_sprite_lists()
+        self.score += 1
+- Trampas:
+    hazard_hit = arcade.check_for_collision_with_list(self.player, hazards)
+    si hay colisión → GameOverView.
+
+7) Vistas: StartView y GameOverView
+-----------------------------------
+- StartView: pantalla inicial con título y controles; al presionar Enter o clic, cambia a GameView.
+- GameOverView: muestra resultado (ganaste/perdiste) y volver al menú.
+
+8) Sonido
+--------------------
+- Carga con arcade.load_sound y reproduce con arcade.play_sound en recoger moneda o al saltar.
+
+9) Pulido final
+---------------
+- Ajustar escalado de tiles (TILE_SCALING).
+- Arreglar colisiones raras con hit_box de sprites si hace falta.
+- Limitar la cámara a los límites del mapa.
+- Agregar fondo/parallax (opcional).
+
+10) Ejecución
+-------------
+- Punto de entrada típico en main.py:
+    if __name__ == "__main__":
+        window = arcade.Window(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
+        view = StartView()   # o GameView si querés ir directo
+        window.show_view(view)
+        arcade.run()
+
+11) Errores comunes y cómo se resolvieron
+-----------------------------------------
+- “Sigue corriendo el código viejo”:
+  Asegurarse de que estás ejecutando el main.py correcto. Cerrar VS Code y reabrir la carpeta.
+  Revisar que el intérprete seleccionado sea el de venv (Python: Select Interpreter).
+- “No carga el mapa .tmx”:
+  Ruta incorrecta. Usar os.path para construir rutas y verificar assets/map/archivo.tmx.
+- “No salta”:
+  Verificar self.physics.can_jump() y GRAVITY > 0.
+- “No aparece StartView/GameOverView”:
+  Confirmar que window.show_view(...) se llama y que las vistas importan bien.
+  Evitar import circulares (por ejemplo, StartView importa GameView y viceversa).
+
+12) Empaquetado del proyecto
+----------------------------
+- Mantener assets dentro de /assets para que las rutas relativas funcionen.
+- Comprimir como .zip o .tar.gz (recomendado) y compartir README.txt con instrucciones.
