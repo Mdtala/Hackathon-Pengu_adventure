@@ -115,14 +115,14 @@ class GameOverView(arcade.View):
         w, h = self.window.width, self.window.height
 
         arcade.draw_text(self.message, w/2, self.text_y,
-                         arcade.color.BLACK, 40, anchor_x="center", font_name="Arial")
+                        arcade.color.BLACK, 40, anchor_x="center", font_name="Arial")
 
         arcade.draw_text(f"Monedas: {self.final_score}", w/2, h/2 - 20,
-                         arcade.color.BLACK, 24, anchor_x="center", font_name="Arial")
+                        arcade.color.BLACK, 24, anchor_x="center", font_name="Arial")
 
         arcade.draw_text("ENTER: Volver al Inicio   |   ESC: Salir",
-                         w/2, h/2 - 70, arcade.color.BLACK, 16,
-                         anchor_x="center", font_name="Arial")
+                        w/2, h/2 - 70, arcade.color.BLACK, 16,
+                        anchor_x="center", font_name="Arial")
 
     # Actualiza la animacion de flotacion del texto principal
     def on_update(self, dt: float):
