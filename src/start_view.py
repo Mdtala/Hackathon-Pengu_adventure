@@ -68,19 +68,19 @@ class StartView(arcade.View):
         w, h = self.window.width, self.window.height
 
         arcade.draw_text("PINGU'S ADVENTURE",
-                         w/2, self.text_y, arcade.color.BLACK, 30,
-                         anchor_x="center", font_name=self.font_name)
+                        w/2, self.text_y, arcade.color.BLACK, 30,
+                        anchor_x="center", font_name=self.font_name)
 
         # “respiración” del texto
         scale = 1 + 0.04 * math.sin(self.scale_time)
         size = int(self.base_font_size * scale)
 
         arcade.draw_text("Presioná ENTER para jugar",
-                         w/2, h/2 - 60, arcade.color.BLACK, size,
-                         anchor_x="center", font_name=self.font_name)
+                        w/2, h/2 - 60, arcade.color.BLACK, size,
+                        anchor_x="center", font_name=self.font_name)
         arcade.draw_text("ESC para salir",
-                         w/2, h/2 - 95, arcade.color.BLACK, 14,
-                         anchor_x="center", font_name=self.font_name)
+                        w/2, h/2 - 95, arcade.color.BLACK, 14,
+                        anchor_x="center", font_name=self.font_name)
 
     def on_update(self, dt: float):
         self.text_y += self.float_speed * self.float_dir
